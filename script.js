@@ -110,19 +110,19 @@ clear.addEventListener("click", () => {
 
 toggleNegative.addEventListener("click", () => {
     if (display.textContent == 0) return displayedValue(0);
-    if (display.textContent == firstNum && firstNum > 0) {
-        firstNum = -firstNum;
-        return displayedValue(firstNum)
-    } else if (display.textContent == firstNum && firstNum < 0) {
-        firstNum = Math.abs(firstNum);
-        return displayedValue(firstNum)
-    }
     if (display.textContent == secondNum && secondNum > 0) {
         secondNum = -secondNum;
         return displayedValue(secondNum)
     } else if (display.textContent == secondNum && secondNum < 0) {
         secondNum = Math.abs(secondNum);
         return displayedValue(secondNum)
+    }
+    if (display.textContent == firstNum && firstNum > 0) {
+        firstNum = -firstNum;
+        return displayedValue(firstNum)
+    } else if (display.textContent == firstNum && firstNum < 0) {
+        firstNum = Math.abs(firstNum);
+        return displayedValue(firstNum)
     }
 });
 
