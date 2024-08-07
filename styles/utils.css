@@ -1,0 +1,45 @@
+.container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 0.5rem;
+  padding-right: 0.5rem;
+}
+
+.btn {
+  font-weight: 600;
+  text-decoration: none;
+  background-color: var(--clr-slate800);
+  color: var(--clr-light);
+  border-radius: 6px;
+  box-shadow: 0 10px 20px rgb(30, 41, 59, 0.5), 0 6px 6px rgb(30, 41, 59, 0.5),
+    0 0 100px -10px var(--clr-slate800);
+  transition: transform 0.3s, box-shadow 0.3s;
+  height: 5rem;
+  width: 6rem;
+  margin: 0.2rem;
+}
+
+.btn:active{
+transform:scale(0.90)
+}
+
+.eerieblack{
+    background-color: var(--clr-eerieblack);
+}
+
+.orange{
+    background-color: var(--clr-orange);
+}
+
+.darkliver{
+    background-color: var(--clr-darkliver);
+}
+
+.lightgrey{
+    background-color: var(--clr-lightgrey);
+    color: var(--clr-dark);
+}
