@@ -78,7 +78,7 @@ function operate(num1, operator, num2) {
 numberButtons.forEach((button) => {
     button.addEventListener("click", () => {
         if (display.textContent == 0) displayedValue("")
-        if (operatorValue == undefined && firstNum == result && !(display.textContent.includes("."))) {
+        if (operatorValue == undefined && firstNum == result) {
             displayedValue("")
             display.textContent += button.textContent
             operatorValue == undefined ? firstNum = display.textContent : secondNum = display.textContent;
