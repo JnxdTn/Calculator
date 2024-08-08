@@ -5,10 +5,14 @@
   min-width: 30rem;
   height: fit-content;
   background-color: var(--clr-eerieblack);
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
 }
 
 .display {
   height: 5rem;
+  width: fit-content;
   max-width: 22rem;
   color: white;
   text-align: right;
