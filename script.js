@@ -41,11 +41,11 @@ const multiply = (num1, num2) => {
 
 const divide = (num1, num2) => {
     if (num1 == 0 || num2 == 0) {
-        result = "Error!"
-        displayedValue(result)
+        displayedValue("Error!")
+        firstNum = 0;
         secondNum = undefined;
         operatorValue = undefined;
-        return firstNum = result;
+        return;
     }
     result = num1 / num2;
     displayedValue(result)
