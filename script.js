@@ -57,8 +57,6 @@ const divide = (num1, num2) => {
 function operate(num1, operator, num2) {
     firstNum = parseFloat(num1);
     secondNum = parseFloat(num2);
-    console.log(`First Number: ${firstNum}`)
-    console.log(`Second Number: ${secondNum}`)
     switch (operator) {
         case "add":
             add(firstNum, secondNum);
