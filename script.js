@@ -15,43 +15,39 @@ const displayedValue = (output) => {
 
 displayedValue(0);
 
+function updateFormulaValues(firstValue, secondValue, operatorSign) {
+    firstNum = firstValue;
+    secondNum = secondValue;
+    operatorValue = operatorSign;
+    return { firstNum, secondNum, operatorValue };
+}
+
 const add = (num1, num2) => {
     result = num1 + num2;
     displayedValue(result);
-    firstNum = result;
-    secondNum = undefined;
-    operatorValue = undefined;
+    updateFormulaValues(result, undefined, undefined);
 }
 
 const subtract = (num1, num2) => {
     result = num1 - num2;
     displayedValue(result)
-    firstNum = result;
-    secondNum = undefined;
-    operatorValue = undefined;
+    updateFormulaValues(result, undefined, undefined);
 }
 
 const multiply = (num1, num2) => {
     result = num1 * num2;
     displayedValue(result)
-    firstNum = result;
-    secondNum = undefined;
-    operatorValue = undefined;
+    updateFormulaValues(result, undefined, undefined);
 }
 
 const divide = (num1, num2) => {
     if (num1 == 0 || num2 == 0) {
         displayedValue("Error!")
-        firstNum = 0;
-        secondNum = undefined;
-        operatorValue = undefined;
-        return;
+        return updateFormulaValues(0, undefined, undefined);
     }
     result = num1 / num2;
     displayedValue(result)
-    firstNum = result;
-    secondNum = undefined;
-    operatorValue = undefined;
+    updateFormulaValues(result, undefined, undefined);
 }
 
 function operate(num1, operator, num2) {
@@ -99,9 +95,7 @@ evaluate.addEventListener("click", () => {
 })
 
 clear.addEventListener("click", () => {
-    firstNum = 0;
-    operatorValue = undefined;
-    secondNum = undefined;
+    updateFormulaValues(0, undefined, undefined);
     result = undefined;
     displayedValue(firstNum)
 })
